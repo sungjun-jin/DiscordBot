@@ -4,7 +4,7 @@ import os
 import random
 from discord.ext import commands
 
-TOKEN = 'NjgzNzM5NDc1MTAwMDQxMjU1.Xlv8IQ.4TnJCiS5cMqNUuVn51HfUJAm29I'
+TOKEN = 
 
 
 client = commands.Bot(command_prefix = '!')
