@@ -1,0 +1,57 @@
+import discord
+import requests 
+from bs4 import BeautifulSoup
+
+client = discord.Client()
+
+@client.event
+async def on_ready() :
+    print(client.user.id)
+    print('ready')
+    game = discord.Game("테스트봇")
+    await client.change_presence(status=discord.Status.online, activity=game)
+
+
+
+@client.event
+async def on_message(message) :
+
+    # 봇 응답메세지의 반복을 멈춤 
+    if message.author.bot :
+        return None 
+
+    # 인사 메세지 
+    if message.content.startswith('안녕') :
+        await message.channel.send('안녕하세요!')
+
+    if message.content.startswith('코로나') :
+        await message.channel.send(coronaInfo())
+
+
+
+# 코로나 정보 출력 함수
+def coronaInfo() :
+
+    # 1. 코로나 확진 환자
+    # 2. 코로나 검사 진행
+    # 3. 격리해제
+    # 4. 사망자 
+
+    # 크롤링 할 URL
+    url = "http://ncov.mohw.go.kr/bdBoardList_Real.do?brdId=&brdGubun=&ncvContSeq=&contSeq=&board_id=&gubun="
+
+    response = requests.get(url)
+    domain = BeautifulSoup(response.content, 'html.parser')
+
+    # 데이터 업데이트 시간
+    corona_update_time = domain.select_one('p.s_descript').text.strip()
+
+    # 확진환자, 검사진행 환자, 격리해제 환자, 사망자 수 
+    corona_text = domain.select_one('.num').text.strip()
+
+    print(corona_text);
+
+    return corona_update_time +'\n'+ corona_text
+
+client.run("NjgzNjQ0Nzk1MDQ1OTM3MTUz.Xluj_Q.yoR3-0LRKjCX2iFYjwW-YM-4nBc")
+coronaInfo()
