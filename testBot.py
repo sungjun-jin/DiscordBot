@@ -63,7 +63,7 @@ def coronaInfo() :
     # 확진환자, 검사진행 환자, 격리해제 환자, 사망자 수 
     corona_text = domain.select_one('.num').text.strip()
 
-    print(corona_text);
+    print(corona_text)
 
     return corona_update_time +'\n'+ corona_text
 
@@ -171,5 +171,7 @@ def getDate() :
  
 
 
-client.run("NjgzNjQ0Nzk1MDQ1OTM3MTUz.Xlzitg.U6IX-8_2I-IglAzwsYDM791NZVw")
+client.run("NjgzNjQ0Nzk1MDQ1OTM3MTUz.XmD59Q.SVbYsFKnLUt-cPEArqUhtdmKmB0")
+
+coronaInfo()
 

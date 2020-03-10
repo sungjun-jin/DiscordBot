@@ -9,7 +9,7 @@ from urllib.request import urlopen
 import requests
 
 
-TOKEN = 
+TOKEN = ""
 
 client = discord.Client()
 client = commands.Bot(command_prefix = '!')
