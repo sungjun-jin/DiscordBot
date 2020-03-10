@@ -5,7 +5,7 @@
 
 코로나 확진환자, 격리해제, 격리중, 사망 수를 출력.
 
-![](https://images.velog.io/images/sungjun-jin/post/33fe793b-d118-419c-a152-a30f43c5d8ad/image.png)
+![](https://images.velog.io/images/sungjun-jin/post/e39fcfa5-4685-49e0-b9a5-1a46217799e3/image.png)
 
 질병관리본부의 코로나 홈페이지(http://ncov.mohw.go.kr/bdBoardList_Real.do?brdId=&brdGubun=&ncvContSeq=&contSeq=&board_id=&gubun=)를 활용
 
