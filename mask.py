@@ -7,7 +7,7 @@ def getMaskData() :
     URL = "https://8oi9s0nnth.apigw.ntruss.com/corona19-masks/v1/stores/json?page="
     MAX_PAGE = 10
 
-    REGION = "경주시" # 검색 지역
+    REGION = "연수구" # 검색 지역
 
     stores = [] # 필터링된 마스크 판매처 
     
