@@ -1,13 +1,22 @@
 # DiscordBot
 
-<<<<<<< HEAD
 ## WeStudy 3~4 주차 Python Discord Bot 만들기
 
+### 1. 코로나19
 
+![](https://images.velog.io/images/sungjun-jin/post/e39fcfa5-4685-49e0-b9a5-1a46217799e3/image.png)
 
+코로나 확진환자, 격리해제, 격리중, 사망 수를 출력. 
 
-<<<<<<< HEAD
-질병관리본부의 코로나 홈페이지(http://ncov.mohw.go.kr/bdBoardList_Real.do?brdId=&brdGubun=&ncvContSeq=&contSeq=&board_id=&gubun=)를 활용
+#### 2020-03-21(수정)
+
+![](https://images.velog.io/images/sungjun-jin/post/61569c7c-6c03-440e-a963-aac46fc58bbc/image.png)
+
+이전에 크롤링한 데이터는 질병관리본부 페이지에 있는 table의 문자열을 통째로 가져오는 방식을 사용해 불필요한 공백이 많았다. 
+
+테이블의 각 요소(확진환자, 격리해제, 격리중, 사망 수)를 따로따로 가져와서 하나의 dictionary로 정리했다. 이 과정에서 문자열의 공백을 제거해 조금 더 깔끔하게 출력했다. 
+
+질병관리본부의 코로나 홈페이지(http://ncov.mohw.go.kr/bdBoardList_Real.do?brdId=&brdGubun=&ncvContSeq=&contSeq=&board_id=&gubun=)를 활용했다.
 
 ### 2. 프리미어리그 순위, 승점
 
@@ -26,8 +35,3 @@ Sky Sports (https://www.skysports.com/premier-league-table)를 활용
 ![](https://images.velog.io/images/sungjun-jin/post/ff8d1b70-a567-4d0d-a5e4-c1eec3353bf2/image.png)
 
 원래는 디스코드 메세지로 지역을 검색하는 기능을 넣고 싶었지만 오류를 해결하지 못해 코드에 검색하고자 하는 지역명을 넣어주는 방식으로 처리했다. 
-
-=======
-=======
->>>>>>> 33efd8256d82197a213a6881ebb92d46e7414492
->>>>>>> d60c82569b0dc8c41196f196822ef01c8dc85bf8
