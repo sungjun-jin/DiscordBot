@@ -1,13 +1,12 @@
 # DiscordBot
 
+<<<<<<< HEAD
 ## WeStudy 3~4 주차 Python Discord Bot 만들기
 
-### 1. 코로나19
 
-코로나 확진환자, 격리해제, 격리중, 사망 수를 출력.
 
-![](https://images.velog.io/images/sungjun-jin/post/e39fcfa5-4685-49e0-b9a5-1a46217799e3/image.png)
 
+<<<<<<< HEAD
 질병관리본부의 코로나 홈페이지(http://ncov.mohw.go.kr/bdBoardList_Real.do?brdId=&brdGubun=&ncvContSeq=&contSeq=&board_id=&gubun=)를 활용
 
 ### 2. 프리미어리그 순위, 승점
@@ -28,3 +27,7 @@ Sky Sports (https://www.skysports.com/premier-league-table)를 활용
 
 원래는 디스코드 메세지로 지역을 검색하는 기능을 넣고 싶었지만 오류를 해결하지 못해 코드에 검색하고자 하는 지역명을 넣어주는 방식으로 처리했다. 
 
+=======
+=======
+>>>>>>> 33efd8256d82197a213a6881ebb92d46e7414492
+>>>>>>> d60c82569b0dc8c41196f196822ef01c8dc85bf8
